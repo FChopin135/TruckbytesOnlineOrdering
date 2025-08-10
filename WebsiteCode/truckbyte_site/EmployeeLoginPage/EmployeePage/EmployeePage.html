@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <link rel="stylesheet" href="../../assets/css/global.css">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <head>
+        <title>Truckbyte</title>
+    </head>
+
+    <body>
+        <div class="page-wrapper">
+            <div class="Top-Banner">
+                <div class="Top-Buttons">
+                    <Button onclick="window.location.href='../LoginPage.html'" id="headerEmployeeLoginButton"> Employee Login </Button>
+                    <label> Truckbyte's Online Ordering</label> 
+                    <Button onclick="ToggleMenu('.AboutUs-Popup', 'AboutUs-overlay')"> About Us </Button>
+                    
+                </div>
+            </div>
+
+            <h1>KDS</h1>
+
+            <div class="active-order-container">
+                
+            </div>
+            
+
+            <!-- This is the pop up menu for the about us page-->
+            <div class="overlay" id="AboutUs-overlay">
+                <div class="AboutUs-Popup">
+                    <h2>About Us</h2>
+                    
+                    <p> 
+                        Project by Cole Whitaker, <br> 
+                        Adam Broderick 
+                        <br> & <br> 
+                        Jason Cope <br> 
+                        2025 Summer Capstone
+                    </p>
+                    
+
+                    <div class="Cart-Bottom-Bar">
+                        <div class="Bottom-Menu-Buttons">
+                            <button type="submit" onclick="ToggleMenu('.AboutUs-Popup', 'AboutUs-overlay')">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!------------------------------------------------------------------>
+
+
+        </div>
+        <script src="../../assets/js/SharedFunctions.js"></script>
+        <script src="EmployeeScript.js"></script>
+    </body>
+</html>
